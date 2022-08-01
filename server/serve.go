@@ -44,6 +44,7 @@ func Serve(_neuralNetworks map[string]network.Network, port string) {
 	router.HandleFunc("/api/{locale}/train", Train).Methods("POST")
 	router.HandleFunc("/api/{locale}/intents", dashboard.GetIntents).Methods("GET")
 	router.HandleFunc("/api/coverage", analysis.GetCoverage).Methods("GET")
+	router.HandleFunc("/api/reply", GetReply).Methods("POST")
 
 	magenta := color.FgMagenta.Render
 	fmt.Printf("\nServer listening on the port %s...\n", magenta(port))
