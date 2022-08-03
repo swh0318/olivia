@@ -1,0 +1,36 @@
+[
+  {
+    "tag": "短信",
+    "patterns": [
+      "短信模板",
+      "模板"
+    ],
+    "responses": [
+      "https://confluence.swh.net/pages/viewpage.action?pageId=1"
+    ],
+    "context": ""
+  },
+  {
+    "tag": "邮件",
+    "patterns": [
+      "邮件模板",
+      "邮件模板"
+    ],
+    "responses": [
+      "https://confluence.swh.net/pages/viewpage.action?pageId=2"
+    ],
+    "context": ""
+  },
+  {
+    "tag": "工单",
+    "patterns": [
+      "工单",
+      "工单卡住",
+      "工单卡住如何处理"
+    ],
+    "responses": [
+      "1、查看日志\\n 2、找徐德东"
+    ],
+    "context": ""
+  }
+]

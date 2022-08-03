@@ -23,8 +23,8 @@ import (
 var neuralNetworks = map[string]network.Network{}
 
 func main() {
-	port := flag.String("port", "8080", "The port for the API and WebSocket.")
-	localesFlag := flag.String("re-train", "", "The locale(s) to re-train.")
+	port := flag.String("port", "8081", "The port for the API and WebSocket.")
+	localesFlag := flag.String("re-train", "cn", "The locale(s) to re-train.")
 	flag.Parse()
 
 	// If the locales flag isn't empty then retrain the given models

@@ -107,9 +107,9 @@ func Reply(request RequestMessage) []byte {
 		responseSentence = util.GetMessage(request.Locale, responseTag)
 	} else {
 		// If the given locale is not supported yet, set english
-		locale := request.Locale
+		locale := "cn"
 		if !locales.Exists(locale) {
-			locale = "en"
+			locale = "cn"
 		}
 
 		responseTag, responseSentence = analysis.NewSentence(
